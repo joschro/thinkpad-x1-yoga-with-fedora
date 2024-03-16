@@ -63,3 +63,7 @@ Reboot with
 reboot
 ```
 and again keep F12 pressed to make sure you boot into Fedora's live system for installation.
+
+Step 3 - Install Fedora
+-----------------------
+Back in the Fedora istallation live system, click the "Install to Hard Drive" icon on the screen twice and go through the language setup dialogue.
