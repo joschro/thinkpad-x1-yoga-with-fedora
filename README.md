@@ -62,6 +62,11 @@ or
 fdisk -l /dev/nvme0n1
 ```
 
+Finally, adjust the NTFS filesystem to fill up the entire partition:
+```
+ntfsresize -x /dev/nvme0n1p3
+```
+
 Reboot with
 ```
 reboot
