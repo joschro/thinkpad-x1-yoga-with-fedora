@@ -67,3 +67,28 @@ and again keep F12 pressed to make sure you boot into Fedora's live system for i
 Step 3 - Install Fedora
 -----------------------
 Back in the Fedora istallation live system, click the "Install to Hard Drive" icon on the screen twice and go through the language setup dialogue.
+
+![grafik](https://github.com/joschro/thinkpad-x1-yoga-with-fedora/assets/12337748/5dd9304a-face-41f6-9b39-5a28942cf5aa)
+
+
+Select "Custom" for storage configuration
+![grafik](https://github.com/joschro/thinkpad-x1-yoga-with-fedora/assets/12337748/f306b7bf-9766-4145-b6d5-932374122bca)
+
+
+Check "Encrypt my data" and click "Click here to create them automatically"
+![grafik](https://github.com/joschro/thinkpad-x1-yoga-with-fedora/assets/12337748/6771b5fe-296c-4ac6-aa6f-c4d205fa3e58)
+
+It should look like this:
+![grafik](https://github.com/joschro/thinkpad-x1-yoga-with-fedora/assets/12337748/29fd0ef6-a6c8-43c7-b776-9b6da2a3c987)
+
+In case you wanted to install additional operating systems or add another partition for other purposes, you could change the size of the Linux partition:
+![grafik](https://github.com/joschro/thinkpad-x1-yoga-with-fedora/assets/12337748/7f0bc39a-b32c-4d09-9c6e-e57c2e1715a9)
+
+Click "Done" and enter the encryption passphrase:
+![grafik](https://github.com/joschro/thinkpad-x1-yoga-with-fedora/assets/12337748/066937b6-e83a-45da-8c2e-7357e97d6fb5)
+
+After this final step, you'll see a summary of changes to be made on the disk; confirm and proceed with the remaining configuration steps like adding a user, timezone settings etc.
+
+Step 4 - Using Windows
+----------------------
+You should start Windows using the F12 boot selection dialogue on start-up; this way Windows won't complain about wrong signatures and won't ask for a specific number. Otherwise, you could boot Windows by selecting the entry in the Grub boot loader, but you would have to provide the specific number each time the Grub configuration gets updated, e.g. when a new kernel update has been installed.
