@@ -49,7 +49,11 @@ Now enter
 ```
 ntfsresize -s 65G /dev/nvme0n1p3
 ```
-to resize the Windows partition to 60GB; you can check with
+to resize the NTFS filesystem on partition 3 to a lower value than the 70GB we aim for the partition to finally be; this is to make we don't cut any of the filesystem by shrinking the partition in the next step; enter
+```
+parted /dev/nvme0n1 resizepart 3 70G
+```
+to resize the Windows partition to 70GB; you can check with
 ```
 parted -l
 ```
