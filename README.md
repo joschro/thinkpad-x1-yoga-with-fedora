@@ -47,7 +47,7 @@ parted -l
 
 Now enter
 ```
-ntfsresize -s 60G /dev/nvme0n1p3
+ntfsresize -s 65G /dev/nvme0n1p3
 ```
 to resize the Windows partition to 60GB; you can check with
 ```
@@ -91,4 +91,4 @@ After this final step, you'll see a summary of changes to be made on the disk; c
 
 Step 4 - Using Windows
 ----------------------
-You should start Windows using the F12 boot selection dialogue on start-up; this way Windows won't complain about wrong signatures and won't ask for a specific number. Otherwise, you could boot Windows by selecting the entry in the Grub boot loader, but you would have to provide the specific number each time the Grub configuration gets updated, e.g. when a new kernel update has been installed.
+You should start Windows using the F12 boot selection dialogue on start-up; this way Windows won't ask for a BitLocker recovery key. Otherwise, you could boot Windows by selecting the entry in the Grub boot loader, but you would have to provide the BitLocker recovery key (can be looked up at https://aka.ms/myrecoverykey) each time the Grub configuration gets updated, e.g. when a new kernel update has been installed.
